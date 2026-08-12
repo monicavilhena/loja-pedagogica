@@ -411,10 +411,12 @@ footer {
         width: 100%;
     }
 
-    .hero-imagem img {
-        width: 100%;
-        border-radius: 16px;
-    }
+.hero-imagem img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+}
 
 
     /* PRODUTOS */
