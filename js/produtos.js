@@ -9,7 +9,7 @@ const produtos = [
 
     {
         nome: "Desafios Matemáticos",
-        categoria: "➗ Matemática",
+        categoria: "Matemática",
         preco: "R$ 24,90",
         descricao: "Atividades para desenvolver o raciocínio lógico.",
         emoji: "➗"
@@ -17,7 +17,7 @@ const produtos = [
 
     {
         nome: "Experimentos de Ciências",
-        categoria: "🧪 Ciências",
+        categoria: "Ciências",
         preco: "R$ 34,90",
         descricao: "Experimentos simples para sala de aula.",
         emoji: "🧪"
