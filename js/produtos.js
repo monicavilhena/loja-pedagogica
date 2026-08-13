@@ -2,8 +2,8 @@ const produtos = [
     {
         nome: "Mapa Mental Ondulatória",
         categoria: "Ciências",
-        preco: "R$ 29,90",
-        descricao: "Mais de 50 atividades prontas para imprimir.",
+        preco: "R$ 3,50",
+        descricao: "Mapa mental simples sobre ondulátoria.",
         imagem: "assets/imagens/ondulatoria.png"
     },
 
