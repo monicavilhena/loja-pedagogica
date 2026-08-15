@@ -20,7 +20,7 @@ const produtos = [
         categoria: "Ciências",
         preco: "R$ 34,90",
         descricao: "Experimentos simples para sala de aula.",
-        emoji: "🧪"
+        imagem: "assets/imagens/ondulatoria.png"
     }
 ];
 const lista = document.getElementById("lista-produtos");
