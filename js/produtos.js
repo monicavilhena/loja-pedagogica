@@ -8,11 +8,11 @@ const produtos = [
     },
 
     {
-        nome: "Desafios Matemáticos",
+        nome: "Flash das Férias",
         categoria: "Matemática",
         preco: "R$ 24,90",
         descricao: "Atividades para desenvolver o raciocínio lógico.",
-        emoji: "➗"
+        imagem: "assets/imagens/flashdasferias.png"
     },
 
     {
