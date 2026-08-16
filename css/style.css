@@ -33,14 +33,14 @@ header {
     z-index: 1000;
 }
 
-.navbar {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 0;
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
 }
 
 .logo h2 {
@@ -68,14 +68,14 @@ header {
 
 /* ---------- HERO ---------- */
 
-.hero {
-    width: 90%;
-    max-width: 1200px;
-    margin: 70px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+.hero{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
 }
 
 .hero-texto {
@@ -174,10 +174,10 @@ header {
 
 /* ---------- PRODUTOS ---------- */
 
-.produtos {
-    width: 90%;
-    max-width: 1200px;
-    margin: 100px auto;
+.produtos{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
 }
 
 .titulo-secao {
