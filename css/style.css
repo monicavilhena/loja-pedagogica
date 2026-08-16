@@ -303,12 +303,16 @@ header {
 
 /* ---------- FOOTER ---------- */
 
-footer {
-    margin-top: 80px;
-    padding: 30px;
-    text-align: center;
-    background: #fff;
-    border-top: 1px solid #ddd;
+footer{
+    margin-top:80px;
+    padding:30px;
+    text-align:center;
+    background:#fff;
+    border-top:1px solid #ddd;
+}
+
+footer p{
+    margin:5px 0;
 }
 
 
