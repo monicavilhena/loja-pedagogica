@@ -29,7 +29,7 @@ const produtos = [
         categoria: "Apresentações",
         preco: "R$ 19,90",
         descricao: "Apresentação sobre Gravitação Universal e Movimento dos Corpos.",
-        imagem: "assets/imagens/gravitacao.png",
+        imagem: "assets/imagens/gravitacao1.png",
         arquivo: "Materiais/apresentacoes/gravitacao.pdf",
         paginas: 20
     }

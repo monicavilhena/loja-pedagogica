@@ -149,7 +149,7 @@ function mostrarProdutos(listaProdutos) {
                             class="botao-preview"
                             onclick="abrirApresentacao(${index})"
                         >
-                            👁 Ver apresentação
+                             Ver apresentação
                         </button>
                         `
 
