@@ -549,3 +549,544 @@ footer {
         padding: 13px;
     }
 }
+
+/* =========================================
+   BOTÕES DOS PRODUTOS
+========================================= */
+
+.botoes-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.botao-preview,
+.botao-comprar {
+
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.botao-preview {
+
+    background: #e0e7ff;
+    color: #2563eb;
+
+}
+
+
+.botao-preview:hover {
+
+    background: #c7d2fe;
+
+}
+
+
+.botao-comprar {
+
+    background: #2563eb;
+    color: white;
+
+}
+
+
+.botao-comprar:hover {
+
+    background: #1d4ed8;
+
+    transform: scale(1.02);
+
+}
+
+
+/* =========================================
+   VISUALIZADOR
+========================================= */
+
+.visualizador {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    z-index: 9999;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+}
+
+
+.visualizador.ativo {
+
+    display: flex;
+
+}
+
+
+body.sem-scroll {
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   CONTEÚDO
+========================================= */
+
+.visualizador-conteudo {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    max-height: 95vh;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+
+}
+
+
+/* =========================================
+   BOTÃO FECHAR
+========================================= */
+
+.fechar-visualizador {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 15px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #333;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+}
+
+
+.fechar-visualizador:hover {
+
+    background: #e2e8f0;
+
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.visualizador-topo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 0 50px 20px 0;
+
+}
+
+
+.visualizador-topo h2 {
+
+    color: #2563eb;
+
+    font-size: 25px;
+
+}
+
+
+#contadorSlides {
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   ÁREA DO SLIDE
+========================================= */
+
+.slide-area {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex: 1;
+
+    min-height: 0;
+
+}
+
+
+.slide-container {
+
+    width: 100%;
+
+    height: 70vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+
+}
+
+
+#pdfCanvas {
+
+    max-width: 100%;
+
+    max-height: 100%;
+
+    display: none;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================================
+   CARREGANDO
+========================================= */
+
+.carregando-pdf {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    width: 100%;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+}
+
+
+/* =========================================
+   CONTROLES LATERAIS
+========================================= */
+
+.controle-slide {
+
+    flex-shrink: 0;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.controle-slide:hover:not(:disabled) {
+
+    background: #1d4ed8;
+
+    transform: scale(1.08);
+
+}
+
+
+.controle-slide:disabled {
+
+    opacity: 0.3;
+
+    cursor: not-allowed;
+
+}
+
+
+/* =========================================
+   RODAPÉ DO VISUALIZADOR
+========================================= */
+
+.visualizador-inferior {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding-top: 20px;
+
+}
+
+
+#numeroSlide {
+
+    font-weight: bold;
+
+    color: #475569;
+
+}
+
+
+.botao-navegacao {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+
+    .visualizador {
+
+        padding: 8px;
+
+    }
+
+
+    .visualizador-conteudo {
+
+        max-height: 96vh;
+
+        padding: 15px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .visualizador-topo {
+
+        padding-right: 45px;
+
+        padding-bottom: 12px;
+
+    }
+
+
+    .visualizador-topo h2 {
+
+        font-size: 18px;
+
+    }
+
+
+    #contadorSlides {
+
+        font-size: 13px;
+
+        padding: 5px 9px;
+
+    }
+
+
+    .slide-area {
+
+        gap: 5px;
+
+    }
+
+
+    .slide-container {
+
+        height: 68vh;
+
+    }
+
+
+    .controle-slide {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 27px;
+
+    }
+
+
+    .visualizador-inferior {
+
+        gap: 10px;
+
+        padding-top: 12px;
+
+    }
+
+
+    .botao-navegacao {
+
+        display: block;
+
+        border: none;
+
+        background: #2563eb;
+
+        color: white;
+
+        padding: 9px 12px;
+
+        border-radius: 8px;
+
+        font-size: 13px;
+
+        cursor: pointer;
+
+    }
+
+
+    .botao-navegacao:disabled {
+
+        opacity: 0.4;
+
+    }
+
+
+    #numeroSlide {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+
+    .visualizador-conteudo {
+
+        padding: 10px;
+
+    }
+
+
+    .visualizador-topo h2 {
+
+        font-size: 16px;
+
+    }
+
+
+    .slide-container {
+
+        height: 65vh;
+
+    }
+
+
+    .controle-slide {
+
+        display: none;
+
+    }
+
+
+    .botao-navegacao {
+
+        font-size: 12px;
+
+        padding: 8px 10px;
+
+    }
+
+}

@@ -1,39 +1,65 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Kiara Ensina</title>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
+
 <header>
+
     <nav class="navbar">
 
+        <div class="logo">
+            <h2>Kiara Ensina</h2>
+        </div>
 
-    <div class="logo">
-        <h2>Kiara Ensina</h2>
-    </div>
 
-    <ul class="menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#categorias">Categorias</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
+        <ul class="menu">
 
-</nav>
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
 
+            <li>
+                <a href="#categorias">Categorias</a>
+            </li>
+
+            <li>
+                <a href="#produtos">Produtos</a>
+            </li>
+
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+
+        </ul>
+
+    </nav>
 
 </header>
+
+
 
 <main>
 
 
 <!-- HERO -->
+
 <section id="inicio" class="hero">
 
     <div class="hero-texto">
@@ -53,22 +79,29 @@
 
     </div>
 
-<div class="hero-imagem">
 
-    <img
-        src="assets/imagens/hero.jpeg"
-        alt="Materiais pedagógicos">
+    <div class="hero-imagem">
 
-</div>
+        <img
+            src="hero.jpeg"
+            alt="Materiais pedagógicos"
+        >
+
+    </div>
 
 </section>
 
+
+
 <!-- PRODUTOS -->
+
 <section id="produtos" class="produtos">
 
     <div class="titulo-secao">
 
-        <h2>Materiais em Destaque</h2>
+        <h2>
+            Materiais em Destaque
+        </h2>
 
         <p>
             Conheça alguns dos nossos materiais digitais.
@@ -76,32 +109,147 @@
 
     </div>
 
+
     <div class="pesquisa">
 
         <input
             type="text"
             id="pesquisar"
-            placeholder="🔍 Pesquise um material...">
+            placeholder="🔍 Pesquise um material..."
+        >
 
     </div>
 
-    <div class="produtos-grid" id="lista-produtos">
-    </div>
+
+    <div
+        class="produtos-grid"
+        id="lista-produtos"
+    ></div>
 
 </section>
 
 
 </main>
 
+
+
+<!-- RODAPÉ -->
+
 <footer id="contato">
-   <p>© 2026 Kiara Ensina</p>
-   <p>kiaramatpedagogico@gmail.com</p>
-   <p>(99)9999999999</p>
+
+    <p>
+        © 2026 Kiara Ensina
+    </p>
+
 </footer>
 
-<script src="js/script.js"></script>
+
+
+<!-- ========================= -->
+<!-- VISUALIZADOR DE PDF -->
+<!-- ========================= -->
+
+<div
+    id="visualizador"
+    class="visualizador"
+>
+
+    <div class="visualizador-conteudo">
+
+
+        <button
+            id="fecharVisualizador"
+            class="fechar-visualizador"
+            aria-label="Fechar apresentação"
+        >
+            ×
+        </button>
+
+
+        <div class="visualizador-topo">
+
+            <h2 id="tituloVisualizador">
+                Apresentação
+            </h2>
+
+            <span id="contadorSlides">
+                0 / 0
+            </span>
+
+        </div>
+
+
+        <div class="slide-area">
+
+            <button
+                id="slideAnterior"
+                class="controle-slide"
+                aria-label="Slide anterior"
+            >
+                ‹
+            </button>
+
+
+            <div class="slide-container">
+
+                <canvas
+                    id="pdfCanvas"
+                ></canvas>
+
+                <div
+                    id="carregandoPDF"
+                    class="carregando-pdf"
+                >
+                    Carregando apresentação...
+                </div>
+
+            </div>
+
+
+            <button
+                id="slideProximo"
+                class="controle-slide"
+                aria-label="Próximo slide"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+        <div class="visualizador-inferior">
+
+            <button
+                id="slideAnteriorMobile"
+                class="botao-navegacao"
+            >
+                ← Anterior
+            </button>
+
+
+            <span id="numeroSlide">
+                Slide 1
+            </span>
+
+
+            <button
+                id="slideProximoMobile"
+                class="botao-navegacao"
+            >
+                Próximo →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
 <script src="js/produtos.js"></script>
 
+<script src="js/script.js"></script>
+
+
 </body>
+
 </html>
