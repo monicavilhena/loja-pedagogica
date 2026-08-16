@@ -145,12 +145,12 @@ function mostrarProdutos(listaProdutos) {
                         ?
 
                         `
-                        <button
-                            class="botao-preview"
-                            onclick="abrirApresentacao(${index})"
-                        >
-                            Ver apresentação
-                        </button>
+<button
+    class="botao-preview"
+    onclick="abrirApresentacao(${index})"
+>
+    Ver apresentação
+</button>
                         `
 
                         :
