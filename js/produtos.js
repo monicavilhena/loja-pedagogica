@@ -18,7 +18,7 @@ const produtos = [
     {
         nome: "Experimentos de Ciências",
         categoria: "Ciências",
-        preco: "R$ 34,90",
+        preco: "R$ 34,9",
         descricao: "Experimentos simples para sala de aula.",
         imagem: "assets/imagens/ondulatoria.png"
     }
